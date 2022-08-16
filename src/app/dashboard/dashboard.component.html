@@ -1,0 +1,114 @@
+<!-- <div id="mySidenav" class="sidenav">
+  <div class="sidenav__items"  style="left: {{marginLeft}};"  id="about" (mouseenter)="openSidenav(true)" (mouseleave)="closeSidenav(false)">
+
+    <header class="sidenav__items__header">
+
+      <ul class="sidenav__items__header__list" [matMenuTriggerFor]="menu" >
+
+        <li class="sidenav__items__header__list__element">
+          <div class="sidenav__items__header__list__element__box">
+            <h2 class="sidenav__items__header__list__element__box__icon">
+              <b class="sidenav__items__header__list__element__box__icon__bold">S</b>
+            </h2>
+            <h3>Systemadmin</h3>
+            <mat-icon>expand_more</mat-icon>
+          </div>
+        </li>
+      </ul>
+
+      <button mat-icon-button><mat-icon>menu</mat-icon>
+      </button>
+
+      <mat-menu #menu="matMenu">
+
+        <button mat-menu-item>
+          <mat-icon>users</mat-icon>
+          <span>My Account</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>voicemail</mat-icon>
+          <span>About</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>logout</mat-icon>
+          <span>Logout</span>
+        </button>
+
+      </mat-menu>
+
+
+    </header>
+
+
+
+
+
+
+    </div>
+
+</div>
+
+<div style="margin-left:50px; padding-left: 25px; background-color: #F2F2F2;">
+  <h2>Hoverable Sidenav Buttons</h2>
+  <p>Hover over the buttons in the left side navigation to open them.</p>
+</div>
+
+
+ -->
+
+
+ <mat-sidenav-container class="container">
+  <mat-sidenav mode="side"  class="container__sidenav" opened>
+
+    <header class="container__sidenav__header">
+
+      <ul class="container__sidenav__header__list" [matMenuTriggerFor]="menu" >
+
+        <li class="container__sidenav__header__list__element">
+          <div class="container__sidenav__header__list__element__box">
+            <h2 class="container__sidenav__header__list__element__box__icon">
+              <b class="container__sidenav__header__list__element__box__icon__bold">S</b>
+            </h2>
+            <h3>Systemadmin</h3>
+            <mat-icon>expand_more</mat-icon>
+          </div>
+        </li>
+      </ul>
+
+      <button class="container__sidenav__header__button" mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <mat-menu #menu="matMenu">
+
+        <button mat-menu-item>
+          <mat-icon>users</mat-icon>
+          <span>My Account</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>voicemail</mat-icon>
+          <span>About</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>logout</mat-icon>
+          <span>Logout</span>
+        </button>
+
+      </mat-menu>
+
+
+    </header>
+
+    <mat-button-toggle-group class="sidenav__items__toggle-group">
+      <ul class="sidenav__items__toggle-group__list">
+        <li class="sidenav__items__toggle-group__list__button" *ngFor="let button of toggleButtons">
+          <mat-button-toggle [value]="button" class="sidenav__items__toggle-group__list__button__toggle">{{button}}</mat-button-toggle>
+        </li>
+      </ul>
+
+    </mat-button-toggle-group>
+
+  </mat-sidenav>
+  <!-- <mat-sidenav position="end">End</mat-sidenav> -->
+  <mat-sidenav-content>main</mat-sidenav-content>
+</mat-sidenav-container>

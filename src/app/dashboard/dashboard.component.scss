@@ -1,0 +1,200 @@
+
+
+
+// .sidenav{
+//   // padding: 15px;
+
+//   &__items {
+
+//     // margin-left: -180px;
+
+
+//     &__header {
+//       height: 50px;
+//       color: black;
+//       border-bottom: 1px solid darkgray;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       &__list{
+
+//         display: flex;
+//         align-items: center;
+//         align-content: center;
+//         // justify-content: center;
+//         list-style: none;
+//         padding-left: 10px;
+//         padding-right: 15px;
+
+//         &__element {
+//           // border: 1px solid blueviolet;
+
+//           &__menu {
+//             margin-left: 15px;
+//           }
+
+//           &__box{
+//             display: flex;
+//             margin: auto;
+//             justify-content: center;
+//             align-items: center;
+//             align-content: center;
+//             // border: 1px solid red;
+
+//             &__icon {
+//               margin: auto;
+//               width: 40px;
+//               height: 40px;
+//               border-radius: 50%;
+//               display: flex;
+//               align-content: center;
+//               align-items: center;
+//               text-align: center;
+//               // border: 1px solid black;
+//               background-color: #3498DB;
+//               &__bold{
+//                 margin: auto;
+//               }
+//             }
+//             h3 {
+//               margin: auto;
+//               display: flex;
+//               align-content: center;
+//               align-items: center;
+//               text-align: center;
+//               // border: 1px solid black;
+//             }
+//             // mat-icon {
+//             //   display: flex;
+//             //   align-content: center;
+//             //   align-items: center;
+//             //   text-align: center;
+//             //   // border: 1px solid black;
+//             // }
+
+//           }
+//         }
+
+//       }
+//     }
+
+//     border-right: 1px solid darkgrey;
+//     position: absolute;
+//     left:-180px;
+//     transition: 0.3s;
+
+//     width: 230px;
+//     // text-decoration: none;
+//     font-size: 15px;
+//     color: white;
+
+//     &__toggle-group {
+//       width: 100%;
+//       border: none;
+
+//       &__list {
+//         list-style: none;
+//         display: flex;
+//         flex-direction: column;
+//         // border: 1px solid red;
+//         width: 100%;
+//         padding-left: 0;
+
+//         &__button {
+
+//           // border: 1px solid orange;
+//           width: 100%;
+//           height: 50px;
+//           margin-top: 15px;
+//           // background-color: aqua;
+//           &__toggle {
+//             display: flex;
+//             height: 50px;
+//             background-color: aqua;
+//             border-top-right-radius: 25px;
+//             border-bottom-right-radius: 25px;
+//           }
+
+//         }
+//       }
+//     }
+//   }
+
+// }
+
+
+
+// #about {
+//   top: 0px;
+//   height: 100vh;
+//   background-color: #ffffff;
+// }
+
+
+
+
+
+
+.container {
+  height: 100%;
+
+  &__sidenav {
+
+    // border: 1px solid black;
+    width: 20%;
+    height: 100%;
+    background-color: aquamarine;
+
+    &__header {
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+
+      &__button {
+        margin-left: 20px;
+      }
+
+      &__list {
+        list-style: none;
+        padding-left: 15px;
+        &__element {
+          padding-left: 0px;
+          &__box {
+
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            margin: auto;
+            list-style: none;
+            &__icon {
+              margin: auto;
+              width: 38px;;
+              height: 38px;
+              border-radius: 50%;
+              display: flex;
+              border: 1px solid black;
+              &__bold {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+              }
+
+            }
+            h3 {
+              margin: auto;
+              border: 1px solid black;
+            }
+            mat-icon {
+              border: 1px solid black;
+            }
+
+          }
+        }
+      }
+    }
+
+
+  }
+}
