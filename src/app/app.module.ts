@@ -8,12 +8,16 @@ import { AppComponent } from './app.component';
 import { LoginPortalComponent } from './login-portal/login-portal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FormComponent } from './dashboard/pages/form/form.component';
+import { QuesBuilderComponent } from './dashboard/pages/ques-builder/ques-builder.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPortalComponent,
-    DashboardComponent
+    DashboardComponent,
+    FormComponent,
+    QuesBuilderComponent
   ],
   imports: [
     BrowserModule,

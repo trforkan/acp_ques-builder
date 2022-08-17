@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -19,26 +20,16 @@ export class DashboardComponent implements OnInit {
     "Map"
   ]
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  togglesidenav() {
-    this.sidenav=!this.sidenav;
+  routePage(event: string) {
+    // console.log(event);
+    const link = "/dashboard/"+event.toLowerCase();
+    console.log(link);
+    this.router.navigateByUrl(link);
   }
-
-  openSidenav(event: Boolean) {
-    console.log(event);
-    this.marginLeft=0;
-
-  }
-
-  closeSidenav(event: Boolean) {
-    console.log(event);
-    this.marginLeft+=-180;
-  }
-
-
 
 }

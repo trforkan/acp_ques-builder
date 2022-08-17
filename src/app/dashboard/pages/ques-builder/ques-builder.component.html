@@ -1,0 +1,71 @@
+<div class="container">
+  <h2 class="container__title">Add Form</h2>
+
+  <div class="container__form">
+    <form action="">
+      <div class="container__form__title-description">
+
+        <mat-form-field appearance="legacy">
+          <mat-label>Title</mat-label>
+          <input type="text" matInput>
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+          <mat-label>Description</mat-label>
+          <input type="text" matInput>
+        </mat-form-field>
+
+      </div>
+
+      <div class="container__form__questions">
+
+        <div class="container__form__questions__data">
+
+          <form action="" class="container__form__questions__data__form">
+
+            <div class="container__form__questions__data__form__box">
+              <mat-form-field appearance="standard" class="container__form__questions__data__form__box__field">
+                <mat-label>Question</mat-label>
+                <input type="text" matInput>
+              </mat-form-field>
+
+              <mat-form-field class="container__form__questions__data__form__box__ques-type" appearance="outline">
+                <mat-select>
+                  <mat-label>Question Type</mat-label>
+                  <ng-container *ngFor="let quesType of quesTypes index as i">
+                    <mat-option [value]="quesType">{{quesType}}</mat-option>
+                  </ng-container>
+                </mat-select>
+              </mat-form-field>
+            </div>
+
+            <form class="container__form__questions__data__form__answers" action="">
+              <ng-container >
+                <mat-icon>check_box_outline_blank</mat-icon>
+                <mat-form-field class="container__form__questions__data__form__answers__field">
+                  <mat-label>Answer</mat-label>
+                  <input type="text" matInput>
+                </mat-form-field>
+              </ng-container>
+            </form>
+
+          </form>
+
+        </div>
+
+        <div class="container__form__questions__button">
+          <button mat-icon-button><mat-icon>add_circle</mat-icon></button>
+        </div>
+
+      </div>
+
+      <!-- <div class="container__form__check">
+        <div>left</div>
+        <div>right</div>
+      </div> -->
+
+
+    </form>
+  </div>
+
+</div>
