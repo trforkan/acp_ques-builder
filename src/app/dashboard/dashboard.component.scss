@@ -5,7 +5,7 @@
   &__sidenav {
 
     // border: 1px solid black;
-    width: 14%;
+    width: 15%;
     height: 100%;
     background-color: #FFFFFF;
     // border: 1px solid black;
@@ -54,6 +54,7 @@
 
             }
             h4 {
+              // width: 50px;
               margin: auto;
               // border: 1px solid black;
             }
@@ -67,30 +68,24 @@
     &__toggle-group {
       width: 100%;
       border: none;
-      &__list {
-        list-style: none;
-        width: 100%;
-        padding-left: 0;
-        &__button {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
 
-          margin-bottom: 5px;
-          display: flex;
-          flex-direction: column;
+      mat-button-toggle {
+        height: 40px;
+        // background-color: aqua;
+        // border: 1px solid red;
+        border-bottom-right-radius: 23px;
+        border-top-right-radius: 23px;
+        // margin: auto;
+        display: flex;
+        align-items: center;
+      }
 
-          &__toggle {
-            // border: 1px solid black;
-            height: 40px;
-            border-bottom-right-radius: 25px;
-            border-top-right-radius: 25px;
-            background-color: #005BA9;
-            color: white;
-            display: flex;
-            align-items: center;
-            b{
-
-            }
-          }
-        }
+      .mat-button-toggle-checked {
+        background-color: #005BA9;
+        color: white;
       }
     }
 

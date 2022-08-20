@@ -1,0 +1,10 @@
+mat-button-toggle-group {
+    background-color: aqua;
+    mat-button-toggle {
+        background-color: bisque;
+    }
+    .mat-button-toggle-checked{
+        background-color: #2979FF;
+        color: white;
+    } 
+}

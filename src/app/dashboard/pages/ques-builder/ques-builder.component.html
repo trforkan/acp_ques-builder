@@ -19,44 +19,44 @@
 
       <div class="container__form__questions">
 
-        <div class="container__form__questions__data">
+        <form action="" class="container__form__questions__form">
 
-          <form action="" class="container__form__questions__data__form">
+          <div class="container__form__questions__form__box">
+            <mat-form-field appearance="standard" class="container__form__questions__form__box__field">
+              <mat-label>Question</mat-label>
+              <input type="text" matInput>
+            </mat-form-field>
 
-            <div class="container__form__questions__data__form__box">
-              <mat-form-field appearance="standard" class="container__form__questions__data__form__box__field">
-                <mat-label>Question</mat-label>
+            <mat-form-field class="container__form__questions__form__box__ques-type" appearance="outline">
+              <mat-select>
+                <mat-label>Question Type</mat-label>
+                <ng-container *ngFor="let quesType of quesTypes index as i">
+                  <mat-option [value]="quesType">{{quesType}}</mat-option>
+                </ng-container>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+          <form class="container__form__questions__form__answers" action="">
+            <div class="answer-line">
+              <mat-icon>check_box_outline_blank</mat-icon>
+              <mat-form-field class="container__form__questions__form__answers__field">
+                <mat-label>Answer</mat-label>
                 <input type="text" matInput>
-              </mat-form-field>
-
-              <mat-form-field class="container__form__questions__data__form__box__ques-type" appearance="outline">
-                <mat-select>
-                  <mat-label>Question Type</mat-label>
-                  <ng-container *ngFor="let quesType of quesTypes index as i">
-                    <mat-option [value]="quesType">{{quesType}}</mat-option>
-                  </ng-container>
-                </mat-select>
               </mat-form-field>
             </div>
 
-            <form class="container__form__questions__data__form__answers" action="">
-              <ng-container >
-                <mat-icon>check_box_outline_blank</mat-icon>
-                <mat-form-field class="container__form__questions__data__form__answers__field">
-                  <mat-label>Answer</mat-label>
-                  <input type="text" matInput>
-                </mat-form-field>
-              </ng-container>
-            </form>
-
+            <mat-icon>check_box_outline_blank</mat-icon>
           </form>
 
-        </div>
+        </form>
 
-        <div class="container__form__questions__button">
+        
+
+      </div>
+
+      <div class="container__form__add-ques-button">
           <button mat-icon-button><mat-icon>add_circle</mat-icon></button>
-        </div>
-
       </div>
 
       <!-- <div class="container__form__check">

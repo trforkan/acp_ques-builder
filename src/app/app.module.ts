@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormComponent } from './dashboard/pages/form/form.component';
 import { QuesBuilderComponent } from './dashboard/pages/ques-builder/ques-builder.component';
+import { ResponseComponent } from './dashboard/pages/response/response.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { QuesBuilderComponent } from './dashboard/pages/ques-builder/ques-builde
     LoginPortalComponent,
     DashboardComponent,
     FormComponent,
-    QuesBuilderComponent
+    QuesBuilderComponent,
+    ResponseComponent
   ],
   imports: [
     BrowserModule,

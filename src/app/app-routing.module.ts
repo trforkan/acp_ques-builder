@@ -1,3 +1,4 @@
+import { ResponseComponent } from './dashboard/pages/response/response.component';
 import { QuesBuilderComponent } from './dashboard/pages/ques-builder/ques-builder.component';
 import { FormComponent } from './dashboard/pages/form/form.component';
 import { login } from './models/model';
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: "dashboard", component: DashboardComponent , children: [
     { path: "form" , component: FormComponent },
     { path: "create", component: QuesBuilderComponent },
+    { path: "response", component: ResponseComponent },
     { path: "" , component: FormComponent },
     ],
   },
